@@ -42,9 +42,6 @@ def test_exit_employee_card_96(
     open_employee(app)
     search_employee(app)
     open_employee_card(app)
-    open_physical_card(app)
-    changed_date_birth_96(app, "02101996")
-    save_changed_date_birth_96(app)
     exit_employee_card(app)
 
     logout(app)

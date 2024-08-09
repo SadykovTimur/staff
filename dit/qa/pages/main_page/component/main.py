@@ -18,17 +18,17 @@ class MainWrapper(ComponentWrapper):
     title_document = Component(css='[data-title="Прием на работу 0000-000702 от 05.04.2021"]')
     table_field = Components(css='[class="gridBox"]')
     save_data = Button(css='[title*="Провести и закрыть"]')
-    field_search = TextField(css='[class="inputsBox dots"] [id*="СписокСтрокаПоиска"]')
-    field_physical = TextField(css='[class="inputsBox dots"] [id*="ФизическоеЛицо"]')
-    dropdown = Button(css='[class*="eddText"] b span')
-    field_data = TextField( css='[class="inputs"] [id*="ДлительностьИспытательногоСрока"] ')
+    field_search = TextField(css='[class="input"] [id*="СписокСтрокаПоиска"]')
+    field_physical = TextField(css='[class="input"] [id*="ФизическоеЛицо"]')
+    dropdown = Button(css='[class*="eddText"]')
+    field_data = TextField( css='[class="inputs"] [id*="ДлительностьИспытательногоСрока"]')
     search_employee = Text(css='[class="gridBox select"]')
-    card_employee = Button(css='[class="gridBoxText"] b')
+    card_employee = Button(css='[class*="LineEven "]')
     title_card = Component(css='[data-title="Тест для Мониторинга (Сотрудник)"]')
     physical_card = Button(xpath='//span[text()="Перейти на карточку физлица"]')
     physical_title = Component(css='[data-title="Тест для Мониторинга (Физическое лицо)"]')
-    input_birthday = TextField(xpath='(//label[@title="Дата рождения физического лица"]//input)[2]')  # обратить внимание
-    save = Button(xpath='(//span[@title="Записать и закрыть (Ctrl+Enter)"])[2] ')  # обратить внимание
+    input_birthday = TextField(css='[class*="Compact"] input[id*="ДатаРождения"]')
+    save = Button(css='[class*="Compact"] [title*="Записать и закрыть"]')
     exit = Button(css='[id*="2headerTopLine_cmd_CloseButton"]') #обратить внимание
     document_monitoring = Button(xpath='//div[text()="Тест для Мониторинга"]')
 

@@ -246,7 +246,7 @@ def open_documents(app: Application) -> None:
 
 
 def change_data_documents_2(app: Application, data: str) -> None:
-    with allure.step('Changes Data documents'):
+    with allure.step('Changing Data documents'):
         try:
             page = MainPage(app)
             page.main.field_data.webelement.click()
@@ -262,7 +262,7 @@ def change_data_documents_2(app: Application, data: str) -> None:
 
 
 def change_data_documents_3(app: Application, data: str) -> None:
-    with allure.step('Changes Data documents'):
+    with allure.step('Changing Data documents'):
         try:
             page = MainPage(app)
             page.main.field_data.webelement.click()
@@ -278,7 +278,7 @@ def change_data_documents_3(app: Application, data: str) -> None:
 
 
 def save_data_documents(app: Application) -> None:
-    with allure.step('Save Data documents'):
+    with allure.step('Saving Data documents'):
         try:
             page = MainPage(app)
             page.main.save_data.click()

@@ -1,5 +1,5 @@
 name: 'Измение реквизита "Испыт. Срок(мес) 3"'
-cmd: 'pytest --alluredir={allure_reports_path} tests/test_change_documents_3.py'
+cmd: 'pytest --alluredir={allure_reports_path} tests/test_change_data_documents_3.py'
 steps:
   - 'Открытие стартовой страницы'
   - 'Внесение авторизационных данных, нажатие кнопки "Войти"'
@@ -7,4 +7,4 @@ steps:
   - 'Открытие журнала документов'
   - 'Открытие документа'
   - 'Измение реквизита "Испыт. Срок(мес)"'
-  - 'Выход из системы'
+  - 'Выход пользователя из системы'

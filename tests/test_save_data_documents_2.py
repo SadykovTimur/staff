@@ -22,11 +22,11 @@ from tests.steps import (
 @allure.label('component', 'DIT')
 @allure.epic('STAFF')
 @allure.story('Вкладка "Прием на работу"')
-@allure.title('Сохранение изменения документа "Прием на работу"')
+@allure.title('Сохранение изменения документа "Прием на работу" 2')
 @allure.severity(allure.severity_level.BLOCKER)
 @pytest.mark.parametrize('browser', CLIENT_BROWSERS)
 @pytest.mark.parametrize('device_type', CLIENT_DEVICE_TYPE)
-def test_save_data_documents(
+def test_save_data_documents_2(
     request: FixtureRequest, make_app: Callable[..., Application], browser: str, device_type: str
 ) -> None:
 

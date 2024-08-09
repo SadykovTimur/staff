@@ -24,7 +24,7 @@ from tests.steps import (
 @allure.label('component', 'DIT')
 @allure.epic('STAFF')
 @allure.story('Карточка физ.лица')
-@allure.title('Сохрание изменения реквизита "Дата рождения" в физическом лице (Изменение Даты рождения_95)')
+@allure.title('Сохранение изменения реквизита "Дата рождения" в физическом лице (Изменение Даты рождения_95)')
 @allure.severity(allure.severity_level.BLOCKER)
 @pytest.mark.parametrize('browser', CLIENT_BROWSERS)
 @pytest.mark.parametrize('device_type', CLIENT_DEVICE_TYPE)

@@ -25,7 +25,7 @@ from tests.steps import (
 @allure.severity(allure.severity_level.BLOCKER)
 @pytest.mark.parametrize('browser', CLIENT_BROWSERS)
 @pytest.mark.parametrize('device_type', CLIENT_DEVICE_TYPE)
-def test_change_data_documents(
+def test_change_data_documents_2(
     request: FixtureRequest, make_app: Callable[..., Application], browser: str, device_type: str
 ) -> None:
 
