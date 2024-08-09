@@ -6,12 +6,7 @@ from _pytest.fixtures import FixtureRequest
 from coms.qa.fixtures.application import Application
 from coms.qa.frontend.constants import CLIENT_BROWSERS, CLIENT_DEVICE_TYPE
 
-from tests.steps import (
-    logout,
-    open_main_page,
-    open_start_page,
-    sign_in,
-)
+from tests.steps import logout, open_main_page, open_start_page, sign_in
 
 
 @allure.label('owner', 't.sadykov')

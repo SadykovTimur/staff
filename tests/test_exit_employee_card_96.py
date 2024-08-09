@@ -7,16 +7,14 @@ from coms.qa.fixtures.application import Application
 from coms.qa.frontend.constants import CLIENT_BROWSERS, CLIENT_DEVICE_TYPE
 
 from tests.steps import (
-    changed_date_birth_96,
+    exit_employee_card,
     logout,
     open_employee,
     open_employee_card,
     open_main_page,
-    open_physical_card,
     open_start_page,
-    save_changed_date_birth_96,
     search_employee,
-    sign_in, exit_employee_card,
+    sign_in,
 )
 
 

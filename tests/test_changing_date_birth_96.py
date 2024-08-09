@@ -8,6 +8,7 @@ from coms.qa.frontend.constants import CLIENT_BROWSERS, CLIENT_DEVICE_TYPE
 
 from tests.steps import (
     changed_date_birth_95,
+    logout,
     open_employee,
     open_employee_card,
     open_main_page,
@@ -15,7 +16,6 @@ from tests.steps import (
     open_start_page,
     search_employee,
     sign_in,
-    logout
 )
 
 
