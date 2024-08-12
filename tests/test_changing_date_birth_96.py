@@ -7,7 +7,7 @@ from coms.qa.fixtures.application import Application
 from coms.qa.frontend.constants import CLIENT_BROWSERS, CLIENT_DEVICE_TYPE
 
 from tests.steps import (
-    changed_date_birth_95,
+    changed_date_birth_96,
     logout,
     open_employee,
     open_employee_card,
@@ -42,6 +42,6 @@ def test_changing_date_birth_96(
     search_employee(app)
     open_employee_card(app)
     open_physical_card(app)
-    changed_date_birth_95(app, "02101996")
+    changed_date_birth_96(app, "02101996")
 
     logout(app)

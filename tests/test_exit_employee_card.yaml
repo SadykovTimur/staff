@@ -1,5 +1,5 @@
-name: 'Закрываем карточку сотрудника (Изменение даты рожжения 95)'
-cmd: 'pytest --alluredir={allure_reports_path} tests/test_exit_employee_card_95.py'
+name: 'Закрываем карточку сотрудника'
+cmd: 'pytest --alluredir={allure_reports_path} tests/test_exit_employee_card.py'
 steps:
   - 'Открытие стартовой страницы'
   - 'Внесение авторизационных данных, нажатие кнопки "Войти"'

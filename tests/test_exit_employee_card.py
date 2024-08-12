@@ -22,11 +22,11 @@ from tests.steps import (
 @allure.label('component', 'DIT')
 @allure.epic('STAFF')
 @allure.story('Карточка физ.лица')
-@allure.title('Закрываем карточку сотрудника (Изменение даты рожжения 95)')
+@allure.title('Закрываем карточку сотрудника')
 @allure.severity(allure.severity_level.BLOCKER)
 @pytest.mark.parametrize('browser', CLIENT_BROWSERS)
 @pytest.mark.parametrize('device_type', CLIENT_DEVICE_TYPE)
-def test_exit_employee_card_95(
+def test_exit_employee_card(
     request: FixtureRequest, make_app: Callable[..., Application], browser: str, device_type: str
 ) -> None:
 
