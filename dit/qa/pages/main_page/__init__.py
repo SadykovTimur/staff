@@ -3,7 +3,7 @@ from __future__ import annotations
 from coms.qa.core.helpers import wait_for
 from coms.qa.frontend.pages import Page
 from coms.qa.frontend.pages.component.button import Button
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, UnexpectedAlertPresentException
 
 from dit.qa.pages.main_page.component.header import Header
 from dit.qa.pages.main_page.component.main import Main
@@ -19,6 +19,13 @@ class MainPage(Page):
     main = Main(id="pagesArea")
     exit = Button(id="LogoutCloseButton")
     dropdown = Button(css='[class*="eddText"] b span')
+
+    def alert_logout(self) -> None:
+        try:
+            self.driver.switch_to.alert.accept()
+
+        except UnexpectedAlertPresentException:
+            pass
 
     def wait_for_loading(self) -> None:
         def condition() -> bool:

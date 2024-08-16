@@ -298,7 +298,7 @@ def logout(app: Application) -> None:
             page = MainPage(app)
             page.header.logout.click()
             page.exit.click()
-            app.driver.switch_to.alert.accept()
+            page.alert_logout()
 
             LogoutPage(app).wait_for_loading()
 
