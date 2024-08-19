@@ -72,7 +72,7 @@ class MainPage(Page):
                 return False
 
         self.app.set_implicitly_wait(1)
-        wait_for(condition, timeout=50, msg='Поиск в правочнике "Сотрудники" не загружен')
+        wait_for(condition, timeout=50, msg='Поиск в справочнике "Сотрудники" не загружен')
         self.app.restore_implicitly_wait()
 
     def wait_for_loading_employee_card(self) -> None:

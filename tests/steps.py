@@ -65,9 +65,7 @@ def sign_in(app: Application, login: str, password: str) -> None:
 def open_main_page(app: Application) -> None:
     with allure.step('Opening Main page'):
         try:
-            page = MainPage(app)
-
-            page.wait_for_loading()
+            MainPage(app).wait_for_loading()
 
             screenshot_attach(app, 'main_page')
         except Exception as e:
