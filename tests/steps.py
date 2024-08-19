@@ -109,7 +109,8 @@ def open_employee_card(app: Application) -> None:
     with allure.step('Opening Employee card'):
         try:
             page = MainPage(app)
-            ActionChains(app.driver).double_click(page.main.card_employee.webelement).perform()  # type: ignore[no-untyped-call]
+            ActionChains(app.driver).double_click(page.main.card_employee.webelement).perform()  # type: ignore
+            # [no-untyped-call]
 
             page.wait_for_loading_employee_card()
 
@@ -232,7 +233,8 @@ def open_documents(app: Application) -> None:
             page = MainPage(app)
             page.main.field_physical.send_keys("Тест для Мониторинга")
             page.dropdown.click()
-            ActionChains(app.driver).double_click(page.main.document_monitoring.webelement).perform()  # type: ignore[no-untyped-call]
+            ActionChains(app.driver).double_click(page.main.document_monitoring.webelement).perform()  # type: ignore
+            # [no-untyped-call]
 
             page.wait_for_loading_document()
 
